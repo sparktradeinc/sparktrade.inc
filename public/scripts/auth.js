@@ -1,13 +1,14 @@
 // Sign-up Logic
-var loadingState = document.getElementById("loader")
-loadingState.style.visibility = "hidden"
+var loadingState = document.querySelector("#loader")
+loadingState.style.display = "none"
 
 const signupForm = document.querySelector('#signupForm');
 signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    // Enable loader
+    loadingState.style.display = "block"
     // User info
-    loadingState.style.visibility = "visible"
     const fname = signupForm['signupFname'].value;
     const lname = signupForm['signupLname'].value;
     const userName = signupForm['signupUsername'].value;
@@ -49,10 +50,11 @@ signupForm.addEventListener('submit', (e) => {
                         console.log("Error occured")
                     })
                     auth.signOut().then(() => {
+                        loadingState.style.display = "none"
                         console.log("SignOut successfully")
-                        loadingState.style.visibility = "hidden"
                         window.location.replace("../login.html")
                     }).catch((error) => {
+                        loadingState.style.display = "none"
                         console.log("Signout error")
                     })
                 }).catch(function (error) {
@@ -70,12 +72,12 @@ signupForm.addEventListener('submit', (e) => {
         let errMsg = error.message
         if (errCode == "auth/weak-password") {
             console.log('errCode')
-            loadingState.style.visibility = "hidden"
+            loadingState.style.display = "none"
         } else {
             console.log(errMsg)
-            loadingState.style.visibility = "hidden"
+            loadingState.style.display = "none"
         }
-        loadingState.style.visibility = "hidden"
+        loadingState.style.display = "none"
         console.log(error)
     });
 });

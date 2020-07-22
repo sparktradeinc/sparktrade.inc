@@ -19,10 +19,10 @@ function hideBtns() {
     if (authState === true) {
         loginBtn.style.display = "none"
         signupBtn.style.display = "none"
-        logoutBtn.style.display = "relative"
+        logoutBtn.style.display = "block"
     } else if (authState === false) {
-        loginBtn.style.display = "relative"
-        signupBtn.style.display = "relative"
+        loginBtn.style.display = "block"
+        signupBtn.style.display = "block"
         logoutBtn.style.display = "none"
     }
 }

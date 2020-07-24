@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var date = new Date();
 	var dueDate = new Date();
-	dueDate.setDate(25);
+	dueDate.setDate(31);
 	//var lockDate = date
 	if (date === dueDate) {
 		$("body").css({

@@ -1,0 +1,29 @@
+[debug] [2020-07-25T06:52:29.121Z] ----------------------------------------------------------------------
+[debug] [2020-07-25T06:52:29.133Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Alabs\AppData\Local\Yarn\Data\global\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-07-25T06:52:29.133Z] CLI Version:   8.6.0
+[debug] [2020-07-25T06:52:29.133Z] Platform:      win32
+[debug] [2020-07-25T06:52:29.134Z] Node Version:  v12.18.1
+[debug] [2020-07-25T06:52:29.235Z] Time:          Sat Jul 25 2020 07:52:29 GMT+0100 (West Africa Standard Time)
+[debug] [2020-07-25T06:52:29.236Z] ----------------------------------------------------------------------
+[debug] [2020-07-25T06:52:29.236Z] 
+[debug] [2020-07-25T06:52:29.369Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-25T06:52:29.371Z] > authorizing via signed-in user
+[debug] [2020-07-25T06:52:29.371Z] [iam] checking project sparktrade-9bb48 for permissions ["firebase.projects.get"]
+[debug] [2020-07-25T06:52:29.377Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-07-25T06:52:29.378Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-07-25T06:52:30.160Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 25 Jul 2020 06:52:30 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-25T06:52:30.211Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sparktrade-9bb48:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-07-25T06:52:32.195Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 25 Jul 2020 06:52:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1145","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-25T06:52:32.197Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sparktrade-9bb48  
+ 
+[debug] [2020-07-25T06:52:33.107Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 25 Jul 2020 06:52:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\spark\Documents\Trade\sparkusa'...
+[info] 
+[debug] [2020-07-25T06:52:33.127Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sparktrade-9bb48/webApps/-/config  
+ 
+[debug] [2020-07-25T06:52:34.362Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 25 Jul 2020 06:52:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
